@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <item
+            android:id="@+id/nalozi"
+            android:title="Nalozi" />
+        <item
+            android:id="@+id/informacije"
+            android:title="Informacije" />
+        <item
+            android:id="@+id/raspored_odeljenja"
+            android:title="Raspored odeljenja" />
+        <item
+            android:id="@+id/nastavnici"
+            android:title="Nastavnici" />
+        <item
+            android:id="@+id/razredni"
+            android:title="Razredni" />
+        <item
+            android:id="@+id/raspored_casova"
+            android:title="Raspored casova" />
+        <item
+            android:id="@+id/sekcija"
+            android:title="Sekcija" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

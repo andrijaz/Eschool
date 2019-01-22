@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipovi_naloga">
+        <item>Direktor</item>
+        <item>Profesor</item>
+        <item>Ucenik</item>
+        <item>Roditelj</item>
+        <item>Sekretar</item>
+    </string-array>
+</resources>
