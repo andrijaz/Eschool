@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/osnovni_podaci"
+        android:id="@+id/userDataTxTView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="4dp"
@@ -16,7 +16,7 @@
         tools:text="Pera Peric, 11234234, adsflkjdas@test.com" />
 
     <TextView
-        android:id="@+id/tip_naloga"
+        android:id="@+id/userTypeTxtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"

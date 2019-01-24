@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".forme.AdminActivity">
+    tools:context=".forme.OcenjivanjeActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,14 +20,30 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_admin" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_ocenjivanje" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/addAccountBtn"
+        android:id="@+id/kontrolniFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|bottom"
+        app:srcCompat="@drawable/kontrolni" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ocenaFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_add_black_24dp" />
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:srcCompat="@drawable/grade" />
 
 </android.support.design.widget.CoordinatorLayout>

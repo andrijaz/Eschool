@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/optionsNastavnikGroup" >
+        <item
+            android:id="@+id/pregledUcenikaItem"
+            android:title="@string/pregled_ucenika" />
+        <item
+            android:id="@+id/otvorenaVrataItem"
+            android:title="@string/pregled_otvorenih_vrata" />
+        <item
+            android:id="@+id/finansijeItem"
+            android:title="@string/pregled_finansija" />
+        <item
+            android:id="@+id/ocenjivanjeItem"
+            android:title="@string/ocenjivanje" />
+        <item
+            android:id="@+id/izostanakItem"
+            android:title="@string/izostanci" />
+        <item
+            android:id="@+id/obavestenjeItem"
+            android:title="@string/obavestenja" />
+        <item
+            android:id="@+id/planRadaItem"
+            android:title="@string/izmena_plana_rada" />
+    </group>
+</menu>

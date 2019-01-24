@@ -3,29 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/optionsAdminGroup"
+        android:checkableBehavior="single">
         <!--android:icon="@drawable/ic_menu_manage"-->
         <item
-            android:id="@+id/nalozi"
-            android:title="Nalozi" />
+            android:id="@+id/accountsItem"
+            android:title="@string/nalozi" />
         <item
-            android:id="@+id/informacije"
-            android:title="Informacije" />
+            android:id="@+id/infoItem"
+            android:title="@string/informacije" />
         <item
-            android:id="@+id/raspored_odeljenja"
-            android:title="Raspored odeljenja" />
+            android:id="@+id/orderOfClassItem"
+            android:title="@string/raspored_odeljenja" />
         <item
-            android:id="@+id/nastavnici"
-            android:title="Nastavnici" />
+            android:id="@+id/professorItem"
+            android:title="@string/nastavnici" />
         <item
-            android:id="@+id/razredni"
-            android:title="Razredni" />
+            android:id="@+id/headItem"
+            android:title="@string/razredni" />
         <item
-            android:id="@+id/raspored_casova"
-            android:title="Raspored casova" />
-        <item
-            android:id="@+id/sekcija"
-            android:title="Sekcija" />
+            android:id="@+id/orderOfSubjectsItem"
+            android:title="@string/raspored_casova" />
     </group>
 
     <!--<item android:title="Communicate">-->

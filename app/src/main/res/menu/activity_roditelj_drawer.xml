@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/finansijeItem"
+            android:title="Pregled Finansija" />
+        <item
+            android:id="@+id/oceneItem"
+            android:title="Pregled Ocena" />
+        <item
+            android:id="@+id/izostanciItem"
+            android:title="Pregled Izostanaka" />
+        <item
+            android:id="@+id/casoviItem"
+            android:title="Raspored Casova" />
+        <item
+            android:id="@+id/obavestenjaItem"
+            android:title="Obavestenja" />
+        <item
+            android:id="@+id/nastavniciItem"
+            android:title="Pregled Nastavnika" />
+    </group>
+
+</menu>

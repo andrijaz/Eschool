@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="imena_ucenika">
+        <item>Milica Jovic</item>
+        <item>Uros Lazic</item>
+        <item>Pavle Joksovic</item>
+        <item>Marija Zivkovic</item>
+        <item>Dusan Ivanovic</item>
+    </string-array>
+</resources>

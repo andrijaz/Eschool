@@ -29,7 +29,7 @@
             android:layout_marginBottom="16dp"
             android:hint="@string/korisnicko_ime"
             android:inputType=""
-            android:autofillHints="" tools:targetApi="o" />
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/passwordEditTxt"

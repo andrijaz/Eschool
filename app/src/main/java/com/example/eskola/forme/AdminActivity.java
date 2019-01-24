@@ -1,11 +1,10 @@
-package com.example.eskola;
+package com.example.eskola.forme;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,9 +15,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.example.eskola.modeli.Osoba;
+import com.example.eskola.R;
 
 import java.util.ArrayList;
 
@@ -55,18 +56,18 @@ public class AdminActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.adminNavView);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     private void setupEmptyLayout() {
-        emptyLabel = findViewById(R.id.empty_label);
+        emptyLabel = findViewById(R.id.addUserLabel);
         emptyLabel.setVisibility(View.GONE);
     }
 
     private void setupListOfUsers() {
-        recyclerView = findViewById(R.id.recycler_view);
-        ArrayList<Nalog> listaNaloga = Nalog.getListOfFakeUsers();
+        recyclerView = findViewById(R.id.AddUserRecyclerView);
+        ArrayList<Osoba> listaNaloga = Osoba.getListOfFakeUsers();
         adapter = new NalogAdapter(listaNaloga);
         recyclerView.setAdapter(adapter);
         LinearLayoutManager manager = new LinearLayoutManager(this);
@@ -78,7 +79,7 @@ public class AdminActivity extends AppCompatActivity
     }
 
     private void setupFab() {
-        FloatingActionButton fab = findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.addAccountBtn);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,19 +105,17 @@ public class AdminActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nalozi) {
+        if (id == R.id.accountsItem) {
 
-        } else if (id == R.id.informacije) {
+        } else if (id == R.id.infoItem) {
 
-        } else if (id == R.id.raspored_odeljenja) {
+        } else if (id == R.id.orderOfClassItem) {
 
-        } else if (id == R.id.nastavnici) {
+        } else if (id == R.id.professorItem) {
 
-        } else if (id == R.id.razredni) {
+        } else if (id == R.id.headItem) {
 
-        } else if (id == R.id.raspored_casova) {
-
-        } else if (id == R.id.sekcija) {
+        } else if (id == R.id.orderOfSubjectsItem) {
 
         }
 
@@ -138,8 +137,8 @@ public class AdminActivity extends AppCompatActivity
                     String email = data.getStringExtra("email");
                     String brojTelefona = data.getStringExtra("telefon");
 
-                    Nalog nalog = new Nalog(tipNaloga, ime, prezime, email, brojTelefona, jmbg);
-                    adapter.addNalog(nalog);
+                    Osoba osoba = new Osoba(tipNaloga, ime, prezime, email, brojTelefona, jmbg);
+                    adapter.addNalog(osoba);
                 }
                 break;
 

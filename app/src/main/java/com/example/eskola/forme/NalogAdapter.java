@@ -1,4 +1,4 @@
-package com.example.eskola;
+package com.example.eskola.forme;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -6,17 +6,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.eskola.R;
+import com.example.eskola.modeli.Osoba;
 
 import java.util.ArrayList;
 
 public class NalogAdapter extends
         RecyclerView.Adapter<NalogAdapter.ViewHolder> {
 
-    private ArrayList<Nalog> listaNaloga;
+    private ArrayList<Osoba> listaNaloga;
 
-    public NalogAdapter(ArrayList<Nalog> listaNaloga) {
+    public NalogAdapter(ArrayList<Osoba> listaNaloga) {
         this.listaNaloga = listaNaloga;
     }
 
@@ -33,13 +35,13 @@ public class NalogAdapter extends
 
     @Override
     public void onBindViewHolder(@NonNull NalogAdapter.ViewHolder holder, int position) {
-        Nalog nalog = listaNaloga.get(position);
+        Osoba osoba = listaNaloga.get(position);
 
         TextView osnovniPodaci = holder.osnovniPodaci;
-        osnovniPodaci.setText(String.format("%s %s, %s, %s", nalog.getIme(), nalog.getPrezime(), nalog.getEmail(), nalog.getBrTelefona()));
+        osnovniPodaci.setText(String.format("%s %s, %s, %s", osoba.getIme(), osoba.getPrezime(), osoba.getEmail(), osoba.getBrTelefona()));
 
         TextView tipNaloga = holder.tipNaloga;
-        tipNaloga.setText(nalog.getTipNaloga());
+        tipNaloga.setText(osoba.getTipNaloga());
     }
 
     @Override
@@ -54,13 +56,13 @@ public class NalogAdapter extends
         public ViewHolder(View itemView) {
             super(itemView);
 
-            osnovniPodaci = itemView.findViewById(R.id.osnovni_podaci);
-            tipNaloga = itemView.findViewById(R.id.tip_naloga);
+            osnovniPodaci = itemView.findViewById(R.id.userDataTxTView);
+            tipNaloga = itemView.findViewById(R.id.userTypeTxtView);
         }
     }
 
-    public void addNalog(Nalog nalog) {
-        listaNaloga.add(nalog);
+    public void addNalog(Osoba osoba) {
+        listaNaloga.add(osoba);
         notifyDataSetChanged();
     }
 }

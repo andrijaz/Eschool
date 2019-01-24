@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="naziv_predmeta">
+        <item>Istorija</item>
+        <item>Geografija</item>
+        <item>Engleski Jezik</item>
+        <item>Matematika</item>
+        <item>Informatika</item>
+        <item>Fizicko vaspitanje</item>
+        <item>Likovno</item>
+        <item>Muzicko</item>
+        <item>Srpski jezik</item>
+    </string-array>
+</resources>

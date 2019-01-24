@@ -9,12 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NalogActivity"></activity>
         <activity
-            android:name=".AdminActivity"
+            android:name=".forme.FinansijeActivity"
+            android:label="@string/title_activity_finansije"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".forme.RoditeljActivity"
+            android:label="@string/title_activity_roditelj"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forme.OcenaActivity"
+            android:label="@string/title_activity_ocena"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forme.KontrolniActivity"
+            android:label="@string/title_activity_kontrolni"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forme.OcenjivanjeActivity"
+            android:label="@string/title_activity_ocenjivanje"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forme.NastavnikActivity"
+            android:label="@string/title_activity_nastavnik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".forme.NalogActivity" />
+        <activity
+            android:name=".forme.AdminActivity"
             android:label="@string/title_activity_admin"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".forme.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
